@@ -7,6 +7,7 @@ from twilio.request_validator import RequestValidator
 from twilio.rest import Client
 import smtplib
 from email.mime.text import MIMEText
+from fastapi.middleware.cors import CORSMiddleware  # Añadir esta línea
 
 load_dotenv()
 MONGO_URI = os.getenv("MONGO_URI")
